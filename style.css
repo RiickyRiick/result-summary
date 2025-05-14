@@ -1,0 +1,212 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(221, 100%, 96%);
+    font-family: 'Hanken grotesk',sans-serif;
+    font-size: 18px;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background-color: hsl(0, 0%, 100%);
+    width: 736px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-radius: 25px; 
+    margin: 0 1rem;
+}
+
+/*Blue-Box Section*/
+.result-overview {
+    background-image: linear-gradient(royalblue, #2421CA); 
+    color: hsl(0, 0%, 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px;
+    border-radius: 25px;
+}
+
+.result-header p {
+    color: hsl(241, 100%, 89%);
+    padding: 38px 0;
+    font-size: 22px;
+}
+
+.score-circle {
+    background-image: linear-gradient(#2421CA, royalblue); 
+    width: 200px;
+    height: 200px;
+    margin: 0 0 28px 0;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/*76 Animation*/
+.score-number {
+    font-size: 70px;
+    position: relative;
+    animation-name: float;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+    25% {
+        transform: translateY(-9px);
+    }
+    50% {
+        transform: translateY(0px);
+    }
+    75% {
+        transform: translateY(-4px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+.score-max {
+    color: hsl(241, 39%, 68%);
+}
+
+.performance-tier {
+    font-weight: 500;
+    padding: 0 0 14px 0;
+}
+
+.score-description {
+    color: hsl(241, 100%, 89%);
+    text-align: center;
+    width: 260px;
+    margin: 0 0 46px 0;
+}
+
+/* White-Box Section*/
+.summary-section {
+    background-color: hsl(0, 0%, 100%);
+    padding: 30px;
+    border-radius: 0 25px 25px 0;
+    text-align: center;
+}
+
+.summary-section-title {
+    font-size: 22px;
+    font-weight: 500;
+    padding: 26px 0;
+    text-align: left;
+}
+
+/* Unorder List Sub-Section */
+
+.score-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    height: 272px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.score-item {
+    display: flex;
+    padding: 15px;
+}
+
+.score-item img {
+    margin-right: 10px;
+}
+
+.score-left {
+    display: flex;
+    align-items: center;
+}
+
+/*Within List Design*/
+.reaction {
+    background-color: hsl(0, 86%, 92%);
+    color: hsl(0, 100%, 67%);
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+}
+
+.memory {
+    background-color: hsl(39, 67%, 94%);
+    color: hsl(39, 100%, 56%);
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+}
+
+.verbal {
+    background-color: hsl(162, 38%, 95%);
+    color: hsl(166, 100%, 37%);
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+}
+
+.visual {
+    background-color: hsl(236, 45%, 94%);
+    color: hsl(235, 85%, 45%);
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+}
+
+
+.summary-number {
+    color: hsl(224, 30%, 27%);
+    font-weight: bold;
+}
+
+.hundred {
+    color: hsl(240, 16%, 60%);
+}
+
+/* Button Section */
+.primary-btn {
+    background: hsl(224, 30%, 27%);
+    color: hsl(0, 0%, 100%);
+    border: none;
+    border-radius: 30px;
+    width: 100%;
+    margin: 41px 0 0 0;
+    padding: 20px;
+    font-size: 17px;
+    font-weight: 600;
+    transition: background-color 0.4s ease, box-shadow 0.4s ease;
+}
+
+.primary-btn:hover {
+    cursor: pointer;
+    background-color: hsl(250, 72%, 49%);
+}
+
+/* Mobile Design */
+@media only screen and (max-width: 600px) {
+
+    .container {
+        display: grid;
+        grid-template-columns: 1fr;
+        margin: 0;
+    }
+
+    .result-overview {
+        border-radius: 0 0 25px 25px;
+    }
+}
