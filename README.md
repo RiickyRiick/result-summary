@@ -40,14 +40,14 @@ Users should be able to:
 
 ## My process
 HTML:
---I first began with HTML semantics i.e., tag names, class names and correct grouping according to the design
+--I first began with HTML semantics, i.e., tag names, class names, and correct grouping according to the design
 
 CSS:
---I continued with CSS i.e., setting up the universal and body selectors with their respective values
+--I continued with CSS, i.e., setting up the universal and body selectors with their respective values
 --I then proceeded to work from top to bottom :
-  -starting from navigation heading, main hedaer, grid container, and finishing off with the footer
---Sizin and positioning were my main objective before moving onto stylzing the fonts
---Lastly, I create a few @media queiries in order to to adjust the background-image with all different viewport sizes
+  -starting from the navigation heading, primary header, grid container, and finishing off with the footer
+--Sizing and positioning were my main objectives before moving on to stylizing the fonts
+--Lastly, I create a few @media queries to adjust the background-image for all different viewport sizes
 
 
 ### Built with
@@ -59,9 +59,7 @@ CSS:
 
 ### What I learned
 
-Coming into this project, I learned that setting up a background image can be very difficult. I struggled to position the image correctly within all the viewports, which meant having fluidity when changing throughout all the viewport sizes instead of glitchy small-to-big adjustments. I used the % and vw to get somewhat of a responsive outcome. 
-
-I also made the mistake of not using px instead of %  on my .main-header, which created an unresponsive box.
+I learned a lot about @keyframes again. The ease of implementing them in your code is great. I plan to continue using @keyframes more and focus on better positioning the footer.
 
 ## Author
 
